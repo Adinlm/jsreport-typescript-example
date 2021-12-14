@@ -9,11 +9,11 @@ const http_1 = __importDefault(require("http"));
 const app = express_1.default();
 app.get('/', (req, res) => {
     res.send(`
-     <h1>Hello from express application</h1>
+     <h1>Js report desde app express</h1>
      <ul>
        <li><a href='/reporting'>Access jsreport studio embedded in express app</a></li>
-       <li><a href='/report'>Render a custom anonymous report in the embedded jsreport instance</a></li>
-       <li><a href='/report-stored'>Render a template stored in jsreport</a></li>
+       <li><a href='/report'>Renderizar un reporte anonimo personalizado</a></li>
+       <li><a href='/report-stored'>Renderizar un template guardado en jsreport</a></li>
      </ul<
      `);
 });
@@ -31,12 +31,12 @@ app.get('/report', async (req, res, next) => {
     try {
         const renderResponse = await jsreport.render({
             template: {
-                content: 'Hello {{message}}',
+                content: 'Clinica {{message}}',
                 engine: 'handlebars',
                 recipe: 'chrome-pdf'
             },
             data: {
-                message: 'from typescript'
+                message: 'Alemana'
             }
         });
         renderResponse.stream.pipe(res);
