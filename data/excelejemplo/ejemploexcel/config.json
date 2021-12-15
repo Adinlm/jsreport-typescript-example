@@ -1,0 +1,17 @@
+{
+    "shortid": "xy7O19Ky-k",
+    "name": "ejemploexcel",
+    "recipe": "xlsx",
+    "engine": "handlebars",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": {
+        "$$date": 1639601566552
+    },
+    "modificationDate": {
+        "$$date": 1639602005472
+    },
+    "_id": "c6qqOhVrxIL7Kv3P",
+    "$entitySet": "templates"
+}

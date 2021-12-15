@@ -1,0 +1,20 @@
+{
+    "shortid": "fyhFk6m_hd",
+    "name": "ejemplodoc",
+    "recipe": "docx",
+    "engine": "handlebars",
+    "chrome": {
+        "printBackground": true
+    },
+    "docx": {
+        "templateAssetShortid": "lONZM_G"
+    },
+    "creationDate": {
+        "$$date": 1639597805217
+    },
+    "modificationDate": {
+        "$$date": 1639600981045
+    },
+    "_id": "WOyyG6W8UvBDipus",
+    "$entitySet": "templates"
+}

@@ -1,0 +1,20 @@
+{
+    "shortid": "QMhQBhDnx4",
+    "name": "clinicaejemplo",
+    "recipe": "chrome-pdf",
+    "engine": "handlebars",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": {
+        "$$date": 1639578395265
+    },
+    "modificationDate": {
+        "$$date": 1639600007225
+    },
+    "_id": "QCLTkC4MoLBHP9or",
+    "$entitySet": "templates",
+    "data": {
+        "shortid": "aRk35J4tH9"
+    }
+}

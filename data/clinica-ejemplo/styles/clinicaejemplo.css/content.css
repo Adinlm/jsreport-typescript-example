@@ -1,0 +1,47 @@
+.margenes{
+    margin: 25px;
+}
+.logo{ 
+    width:150px;
+    height: 150px;
+    
+}
+.ordenamiendo-header{
+    display: flex;
+    justify-content: flex-start;
+}
+hr {
+  height: 1px;
+  width: 1000%;
+  background-color: black;
+}
+
+.titulo-1{
+  margin-bottom: 0px;
+}
+
+.contenido-inferior{
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-2{
+   font-size: 50px;
+   margin-bottom: 50px;
+}
+
+
+.tabla{
+   margin-top: 40px;
+}
+
+
+table, th, td {
+  border: 1px solid black;
+  font-size:25px;
+
+}
+.lista-final{
+  margin-top:50px;
+}
+

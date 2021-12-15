@@ -33,12 +33,12 @@ app.get('/report', async (req, res, next) => {
     try {
         const renderResponse = await jsreport.render({
             template: {
-                content: 'Clinica {{message}}',
+                content: 'Hola desde {{message}}',
                 engine: 'handlebars',
                 recipe: 'chrome-pdf'
             },
             data: {
-                message: 'Alemana'
+                message: 'Typescript'
             }
         })
         renderResponse.stream.pipe(res)
