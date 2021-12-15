@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
         <ul>
         <li><a href='/reporting'>Acceder a jsreport studio a traves de la app</a></li>
         <li><a href='/report-clinica'>Renderizar ejemplo</a></li>
-        <li><a href='http://localhost:3000/reporting/api/report/docx%20ejemplo'>docx ejemplo</a></li>
+        <li><a href='http://localhost:3000/reporting/templates/fyhFk6m_hd'>docx ejemplo</a></li>
         <li><a href='http://localhost:3000/reporting/templates/xy7O19Ky-k'>excel ejemplo</a></li>
         </ul>
      </body>
