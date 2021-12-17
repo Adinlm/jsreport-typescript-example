@@ -17,24 +17,52 @@ app.get('/', (req, res) => {
     </head>
     <body class="mt-3 ms-3">
         <h1>Js report desde app express</h1>
-        
-        <ul>
-        <li><a href='/reporting'>Acceder a jsreport studio a traves de la app</a></li>
-        <li><a href='/report-clinica'>Renderizar ejemplo</a></li>
-        <li><a href='http://localhost:3000/reporting/templates/fyhFk6m_hd'>docx ejemplo</a></li>
-        <li><a href='http://localhost:3000/reporting/templates/xy7O19Ky-k'>excel ejemplo</a></li>
-        </ul>
+
+        <div>
+            <h5>Intrucciones para instalar:</h5>
+            <br>
+            Para crear un proyecto jasperreportapp:
+            <br>
+            <code>>npm install @jsreport/jsreport-cli -g</code>
+            <br>
+            <code>>mkdir jsreportapp</code>
+            <br>
+            <code>>cd jsreportapp</code>
+            <br>
+            <code>>jsreport init</code>
+            <br>
+            <code>>jsreport configure</code>
+            <br>
+            <code>>jsreport start</code>
+            <div class="mt-2">
+            <br>
+                Para instalarlo como parte de node_modules:
+                <br>
+                <code>>npm install jsreport</code>
+            <div>
+        </div>
+        <div class="mt-4">
+            <h5>Ejemplo:</h5>
+            <ul>
+                <li><a href='/ejempojstudio'>Acceder a jsreport studio a traves de la app</a></li>
+                <li><a href='/report-clinica'>Renderizar ejemplo</a></li>
+                <li><a href='http://localhost:3000/ejempojstudio/api/report/ejemplodoc'>docx ejemplo</a></li>
+                <!----
+                <li><a href='http://localhost:3000/reporting/templates/xy7O19Ky-k'>excel ejemplo</a></li>
+                ---->
+            </ul>
+        </div>
      </body>
      `);
 });
 const reportingApp = express_1.default();
-app.use('/reporting', reportingApp);
+app.use('/ejempojstudio', reportingApp);
 const server = http_1.default.createServer(app);
 const jsreport = jsreport_1.default({
     extensions: {
         express: { app: reportingApp, server: server },
     },
-    appPath: "/reporting"
+    appPath: "/ejempojstudio"
 });
 jsreport.init().then(() => server.listen(3000));
 app.get('/report', async (req, res, next) => {
